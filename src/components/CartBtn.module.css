@@ -1,0 +1,28 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 20px;
+  color: black;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.badge {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.icon:hover {
+  color: var(--vintageBlueLight2);
+  transition: 1s ease-in;
+}
+
+.badge:hover {
+  color: var(--vintageBlueLight2);
+  transition: 1s ease-in;
+}

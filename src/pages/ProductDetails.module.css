@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: optional;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 940px;
+  margin: 110px auto 0;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  border: 1px black;
+  border-style: dotted;
+}
+
+.description {
+  margin-right: 50px;
+}
+
+.description h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description p {
+  font-size: 15px;
+}
+
+.description span {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.description button {
+  font-size: 18px;
+  padding: 15px 45px;
+  min-width: 200px;
+  margin-top: 40px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  color: white;
+  box-shadow: 0 4px 6px 0 black;
+}
+
+.description .buy {
+  background-color: transparent;
+  color: black;
+  border-radius: 15px;
+}
+
+.description .cart {
+  background-color: transparent;
+  color: black;
+  border-radius: 15px;
+}
+
+.xzoomThumbs img {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  border: 1px solid white;
+}
+
+.xzoomPreview {
+  border: 1px solid white;
+  box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.mainImahgeAndNavigationButtonsWrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.featuredImage {
+  width: 640px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.arrowLeft {
+  position: absolute;
+  transform: rotate(-180deg);
+  background-color: white;
+  top: calc(50% - 24px);
+}
+
+.arrowRight {
+  position: absolute;
+  top: calc(50% - 24px);
+  right: 0px;
+  background-color: white;
+}

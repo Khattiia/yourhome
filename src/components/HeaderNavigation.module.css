@@ -1,0 +1,70 @@
+.Links {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 8rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  gap: 8rem;
+}
+
+.Popover {
+  margin: auto;
+  display: flex;
+  min-height: 500px;
+  min-width: 100%;
+  z-index: 200;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -69%);
+  position: absolute;
+  box-shadow: 10px 10px 8px #888888;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  justify-content: left;
+  margin: 50px 150px;
+  text-decoration: underline;
+}
+
+.list li {
+  padding-top: 40px;
+}
+
+.Popover a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1350px) {
+  .Link {
+    gap: 4rem;
+  }
+  .Popover {
+    margin: auto;
+    display: flex;
+
+    z-index: 200;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -67%);
+  }
+
+  .list {
+    list-style: none;
+    justify-content: left;
+    margin: 20px 50px;
+  }
+}

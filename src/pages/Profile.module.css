@@ -1,0 +1,83 @@
+.body {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 2rem;
+  text-align: center;
+  width: 300px;
+  line-height: 3rem;
+  left: 77%;
+  bottom: 45%;
+}
+
+.first {
+  padding: 1rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: rgb(219, 216, 213);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list {
+  list-style-type: none;
+  display: block;
+}
+
+.list li {
+  border-top: 1px solid #333;
+  cursor: pointer;
+}
+
+.list :hover {
+  background-color: #333;
+  color: aliceblue;
+}
+
+.list :last-child {
+  border-radius: 0 0 2rem 2rem;
+}
+
+.Btn {
+  background-color: transparent;
+  border: 2px solid var(--vintageBlueLight3);
+  min-width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  display: block;
+  margin-top: 50px;
+  margin-left: 800px;
+}
+
+.Btn:hover {
+  background-color: var(--vintageBlueLight3);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .body {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 2rem;
+    text-align: center;
+    width: 250px;
+    line-height: 3rem;
+    left: 70%;
+    bottom: 43%;
+  }
+  .Btn {
+    background-color: transparent;
+    border: 2px solid var(--vintageBlueLight3);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+  }
+}

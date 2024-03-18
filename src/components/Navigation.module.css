@@ -1,0 +1,102 @@
+:root {
+  --vintageDarkBrown: rgb(116, 97, 76);
+  --vintageBrown: rgb(161, 107, 86);
+  --vintageBrownLight: rgb(218, 166, 110);
+  --vintageBeige: rgb(222, 197, 132);
+  --vintageBeigeLight: rgb(241, 238, 225);
+  --vintageBlue: rgb(86, 125, 137);
+  --vintageBlueLight: rgb(112, 159, 157);
+  --vintageBlueLight2: rgb(143, 185, 183);
+  --vintageBlueLight3: rgb(172, 210, 208);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 135px;
+  right: 135px;
+  height: 5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 100;
+}
+
+.sell {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  min-width: 100px;
+  padding: 14px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.name {
+  text-decoration: none;
+  font-size: 40px;
+  color: var(--vintageDarkBrown);
+  text-transform: uppercase;
+  margin: 0px auto;
+}
+
+.about,
+.login {
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.account {
+  margin: 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  width: 33.333%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 33.333%;
+}
+
+@media screen and (max-width: 1350px) {
+  .header {
+    left: 50px;
+    right: 50px;
+  }
+  .sell {
+    border: 2px solid white;
+    max-width: 50px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  .name {
+    font-size: 25px;
+  }
+
+  .about,
+  .login {
+    font-size: 19.4px;
+  }
+  .account {
+    max-width: 40px;
+  }
+}
